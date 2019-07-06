@@ -1,0 +1,166 @@
+# jemdoc: menu{MENU}{circuitAnalysisShortcuts.html}, addcss{orangeblue.css}, addcss{table.css}
+= Circuit Analysis Shortcuts
+//***//
+~~~
+- [/circuitAnalysisShortcuts.html\#DIV-CKA Circuit Analysis: *Use intuitive shortcuts to analyze circuits whenever possible.*]
+- [/circuitAnalysisShortcuts.html\#DIV-SRS Series Resistors: *Adding a resistor in series increases overall resistance.*]
+- [/circuitAnalysisShortcuts.html\#DIV-VDR Voltage Division: *The largest voltage drop is across the largest resistance in series.*]
+- [/circuitAnalysisShortcuts.html\#DIV-PRS Parallel Resistors: *Adding a resistor in parallel decreases overall resistance.*]
+- [/circuitAnalysisShortcuts.html\#DIV-CDR Current Division: *The largest current is through the smallest resistance in parallel.*]
+
+/***/
+~~~
+
+//***//{{<a name="DIV-CKA"></a>}}== [/circuitAnalysisShortcuts.html\#DIV-CKA Circuit Analysis: *Use intuitive shortcuts to analyze circuits whenever possible.*]
+
+It is possible to turn a circuit analysis into a [/KirchhoffsCircuitLaws.html\#KLS-KCA system of equations], but it is much better to use intuitive shortcuts, which are faster, less prone to error, and provide more insight into how the circuit works. On this page, we tabulate four useful rules for two resistor situations and then derive them for the $n$ resistor case from the fundamental circuit laws: [/KirchhoffsCircuitLaws.html\#KLS-KVL KVL], [/KirchhoffsCircuitLaws.html\#KLS-KCL KCL] and [/resistanceAndOhmsLaw.html\#RES-OHM Ohm's law].
+
+{{<a name="DIV-2RS"></a>}}
+~~~
+{}{table}{twoResistorRules}
+Name | Diagram | Formulas ||
+[/circuitAnalysisShortcuts.html\#DIV-SRS Series Resistors] | {{<img src="images/circuitAnalysisShortcuts/SeriesEquivalent.png" width=200>}} | $\begin{aligned} \text{Equivalent resistance}=R_1+R_2 \end{aligned}$ ||
+[/circuitAnalysisShortcuts.html\#DIV-VDR Voltage Division] | {{<img src="images/circuitAnalysisShortcuts/VoltageDivider.png" width=200>}} | $\begin{aligned} V_1&=\frac{R_1}{R_1+R_2}V_s & V_2&=\frac{R_2}{R_1+R_2}V_s \end{aligned} $ ||
+[/circuitAnalysisShortcuts.html\#DIV-PRS Parallel Resistors] | {{<img src="images/circuitAnalysisShortcuts/ParallelEquivalent.png" width=250>}} | $\begin{aligned} \text{Equivalent resistance}=R_1 \Vert R_2=\frac{R_1R_2}{R_1+R_2} \end{aligned} $ ||
+[/circuitAnalysisShortcuts.html\#DIV-CDR Current Division] | {{<img src="images/circuitAnalysisShortcuts/CurrentDivider.png" width=200>}} | $\begin{aligned} I_1&=\frac{R_2}{R_1+R_2}I_s & I_2&=\frac{R_1}{R_1+R_2}I_s \end{aligned} $
+~~~[/circuitAnalysisShortcuts.html\#DIV-2RS Table 1: Shortcuts for two resistors.]
+
+{{<a name="DIV-SRS"></a>}}== [/circuitAnalysisShortcuts.html\#DIV-SRS Series Resistors: *Adding a resistor in series increases overall resistance.*]
+
+We say circuit elements are in series if they are connected end-to-end with no other elements branching out at the connections. More precisely, two elements are in series if they are connected to a common node that is not connected to another element.
+
+{{<a name="DIV-2ES"></a>}}
+~~~
+{}{img_left}{images/circuitAnalysisShortcuts/Series.png}{Two elements in series}{150}{}{}
+[/circuitAnalysisShortcuts.html\#DIV-2ES Fig. 1: Two elements in series.] Their common node is connected to no other element. $I_1=I_2$ by KCL, so the same current flows through both elements. 
+~~~
+
+{{<a name="DIV-3NS"></a>}}
+~~~
+{}{img_left}{images/circuitAnalysisShortcuts/NotSeries.png}{Elements not in series}{200}{}{}
+[/circuitAnalysisShortcuts.html\#DIV-3NS Fig. 2: Elements not in series.] No two of these elements are in series because the other element is connected to the common node. KCL implies $I_1+I_2=I_3$, so no two of the currents is necessarily equal. 
+~~~
+
+By extension, the same current flows through all elements in series.
+
+{{<a name="DIV-NRS"></a>}}
+~~~
+{}{img_left}{images/circuitAnalysisShortcuts/NSeries.png}{Resistors in a series circuit}{300}{}{}
+[/circuitAnalysisShortcuts.html\#DIV-NRS Fig. 3: Resistors in a series circuit.] If $n$ resistors are connected in series with a voltage source $V_s$, then the same current $I$ flows through all elements.
+~~~
+
+Applying KVL and Ohm's law to the circuit in [/circuitAnalysisShortcuts.html\#DIV-NRS Fig. 3],
+
+\begin{equation}
+\begin{aligned}
+V_s&=V_1+V_2+\cdots+V_n& &\text{by KVL}\\
+&=IR_1+IR_2+\cdots+IR_n& &\text{by Ohm's law} \\
+&=I(R_1+R_2+\cdots+R_n) \\
+&=IR_{ser}
+\end{aligned} \label{DIV-SOH}
+\end{equation}
+
+where 
+
+\begin{align}
+R_{ser}=R_1+R_2+\cdots+R_n \label{DIV-SEQ}
+\end{align}
+
+The fact that $V_s=IR_{ser}$ is in Ohm's law form means that the $n$ resistors in series are equivalent to a resistance of $R_{ser}$, the sum of the individual resistances. 
+
+{{<a name="DIV-VDR"></a>}}== [/circuitAnalysisShortcuts.html\#DIV-VDR Voltage Division: *The largest voltage drop is across the largest resistance in series.*]
+
+Applying Ohm's law to every resistor in [/circuitAnalysisShortcuts.html\#DIV-NRS Fig. 3] gives:
+
+\begin{aligned}
+V_1&=IR_1 & V_2&=IR_2 & &\cdots & V_n&=IR_n
+\end{aligned}
+
+Since $I=V_s/R_{ser}$ from equation $\eqref{DIV-SOH}$, we can rewrite each of these equations as:
+
+\begin{align}
+V_1&=\frac{R_1}{R_{ser}}V_s & V_2&=\frac{R_2}{R_{ser}}V_s & &\cdots & V_n&=\frac{R_n}{R_{ser}}V_s \label{DIV-VDV}
+\end{align}
+
+where $R_{ser}$ is the equivalent resistance of the series resistors given by equation $\eqref{DIV-SEQ}$. Notice that the voltage drop across each resistor is proportional to its own resistance.
+
+In the two resistor case ($n=2$), equations $\eqref{DIV-VDV}$ become the voltage division formulas in [/circuitAnalysisShortcuts.html\#DIV-2RS Table 1]:
+
+\begin{aligned}
+V_1&=\frac{R_1}{R_1+R_2}V_s & V_2&=\frac{R_2}{R_1+R_2}V_s
+\end{aligned}
+
+{{<a name="DIV-PRS"></a>}}== [/circuitAnalysisShortcuts.html\#DIV-PRS Parallel Resistors: *Adding a resistor in parallel decreases overall resistance.*]
+
+We say circuit elements are in parallel if they are arranged side-by-side, each linking one common node directly to another common node. More precisely, two elements are in parallel if they lie on a common loop that does not pass through another element.
+
+{{<a name="DIV-2EP"></a>}}
+~~~
+{}{img_left}{images/circuitAnalysisShortcuts/Parallel.png}{Two elements in parallel}{200}{}{}
+[/circuitAnalysisShortcuts.html\#DIV-2EP Fig. 4: Two elements in parallel.] Their common loop passes through no other element. $V_1=V_2$ by KVL, so the same voltage drop is across both elements. 
+~~~
+
+{{<a name="DIV-3NP"></a>}}
+~~~
+{}{img_left}{images/circuitAnalysisShortcuts/NotParallel.png}{Elements not in parallel}{200}{}{}
+[/circuitAnalysisShortcuts.html\#DIV-3NP Fig. 5: Elements not in parallel.] No two of these elements are in parallel because the other element lies on the common loop. KVL implies $V_1=V_2+V_3$, so no two of the voltage drops is necessarily equal. 
+~~~
+
+By extension, the same voltage drop occurs across all elements in parallel.
+
+{{<a name="DIV-NRP"></a>}}
+~~~
+{}{img_left}{images/circuitAnalysisShortcuts/NParallel.png}{Resistors in a parallel circuit}{500}{}{}
+[/circuitAnalysisShortcuts.html\#DIV-NRP Fig. 6: Resistors in a parallel circuit.] If $n$ resistors are connected in parallel with a current source $I_s$, then all elements have the same voltage drop $V$.
+~~~
+
+Applying KCL and Ohm's law to the circuit in [/circuitAnalysisShortcuts.html\#DIV-NRP Fig. 6],
+
+\begin{equation}
+\begin{aligned}
+I_s&=I_1+I_2+\cdots+I_n& &\text{by KCL}\\
+&=\frac{V}{R_1}+\frac{V}{R_2}+\cdots+\frac{V}{R_n}& &\text{by Ohm's law} \\
+&=V\left( \frac{1}{R_1}+\frac{1}{R_2}+\cdots+\frac{1}{R_n} \right) \\
+&=\frac{V}{R_{par}}
+\end{aligned} \label{DIV-POH}
+\end{equation}
+
+where 
+
+\begin{align}
+R_{par}=\left( \frac{1}{R_1}+\frac{1}{R_2}+\cdots+\frac{1}{R_n} \right)^{-1} \label{DIV-PEQ}
+\end{align}
+
+The fact that $I_s=V/R_{par}$ is in Ohm's law form means that the $n$ resistors in parallel are equivalent to a resistance of $R_{par}$. Notice that $R_{par}$ is smaller than any of the individual resistances because $R_{par}^{-1}$ is larger than any of $R_1^{-1}$, $R_2^{-1}$, ..., $R_n^{-1}$ by equation $\eqref{DIV-PEQ}$.
+
+Sometimes we denote $R_{par}$ as $R_1 \Vert R_2 \Vert \cdots \Vert R_n$, the equivalent resistance of parallel resistors $R_1$, $R_2$, ..., $R_n$.
+
+In the two resistor case ($n=2$), equation $\eqref{DIV-PEQ}$ becomes the parallel resistors formula in [/circuitAnalysisShortcuts.html\#DIV-2RS Table 1]:
+
+\begin{aligned}
+R_1 \Vert R_2=\left( \frac{1}{R_1}+\frac{1}{R_2} \right)^{-1}=\frac{R_1R_2}{R_1+R_2}
+\end{aligned}
+
+{{<a name="DIV-CDR"></a>}}== [/circuitAnalysisShortcuts.html\#DIV-CDR Current Division: *The largest current is through the smallest resistance in parallel.*]
+
+Applying Ohm's law to every resistor in [/circuitAnalysisShortcuts.html\#DIV-NRP Fig. 6] gives:
+
+\begin{aligned}
+I_1&=\frac{V}{R_1} & I_2&=\frac{V}{R_2} & &\cdots & I_n&=\frac{V}{R_n}
+\end{aligned}
+
+Since $V=I_s R_{par}$ from equation $\eqref{DIV-POH}$, we can rewrite each of these equations as:
+
+\begin{align}
+I_1&=\frac{R_{par}}{R_1}I_s & I_2&=\frac{R_{par}}{R_2}I_s & &\cdots & I_n&=\frac{R_{par}}{R_n}I_s \label{DIV-IDV}
+\end{align}
+
+where $R_{par}$ is the equivalent resistance of the parallel resistors given by equation $\eqref{DIV-PEQ}$. Notice that the current through each resistor is inversely proportional to its own resistance.
+
+In the two resistor case ($n=2$), equations $\eqref{DIV-IDV}$ become the current division formulas in [/circuitAnalysisShortcuts.html\#DIV-2RS Table 1]:
+
+\begin{aligned}
+I_1&=\frac{R_1 \Vert R_2}{R_1}I_s & I_2&=\frac{R_1 \Vert R_2}{R_2}I_s \\
+&=\frac{R_2}{R_1+R_2}I_s & &=\frac{R_1}{R_1+R_2}I_s
+\end{aligned}
+

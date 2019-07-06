@@ -1,0 +1,29 @@
+# jemdoc: menu{MENU}{index.html}, nofooter
+= Stanislav Minsker	
+
+~~~
+{}{img_left}{photos/StasMinsker.jpg}{Photo of Stanislav Minsker}{131}{140}{https://www-bcf.usc.edu/~minsker/index.html}
+Assistant Professor \n \n [https://dornsife.usc.edu/mathematics/ Department of Mathematics], \n[https://www.usc.edu/ University of Southern California (USC)]
+\n 
+{{<img src=photos/email1.jpg alt=“email: minsker@usc.edu” height=40>}}
+
+~~~
+
+
+== Mailing Address
+
+USC Dornsife, Department of Mathematics \n
+3620 S. Vermont Ave., KAP 104 \n 
+Los Angeles, CA 90089-2532
+
+
+== Research
+My main research interests are
+- High dimensional and robust statistics
+- Statistical learning theory
+- Concentration of measure inequalities
+
+~~~
+Click [publications.html here] to see the list of publications.
+~~~
+

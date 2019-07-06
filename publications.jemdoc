@@ -1,0 +1,62 @@
+# jemdoc: menu{MENU}{publications.html}, nofooter
+= Stanislav Minsker - Publications
+
+== Papers 
+
+- Uniform bounds for robust mean estimators. Preprint, 2018. \n
+ [https://arxiv.org/abs/1812.03523 arXiv:1812.03523]
+- User-Friendly Covariance Estimation for Heavy-Tailed Distributions: A Survey and Recent Results (with Yuan Ke,  Zhao Ren,  Qiang Sun and  Wen-Xin Zhou). Preprint, 2018. \n
+[https://arxiv.org/abs/1811.01520 arXiv:1811.01520]
+- Moment inequalities for matrix-valued U-statistics of order 2 (with X. Wei). Preprint, 2018. \n
+ [https://arxiv.org/abs/1801.05921 arXiv:1801.05921]
+- Robust modifications of U-statistics and applications to covariance estimation problems (with X. Wei). Preprint, 2018. \n 
+[https://arxiv.org/abs/1801.05565 arXiv:1801.05565]
+- Estimation of the covariance structure of heavy-tailed distributions (with X. Wei). NIPS-2017. \n 
+[https://arxiv.org/abs/1708.00502 arXiv:1708.00502].
+- Distributed statistical estimation and rates of convergence in normal approximation. Preprint, 2017. \n
+[https://arxiv.org/abs/1704.02658 arXiv: 1704.02658]
+- Structured signal recovery from non-linear and heavy-tailed measurements (with L. Goldstein and X. Wei). IEEE Transactions on Information Theory,Vol. 64, Iss. 8, pages 5513 - 5530 (2018).  \n
+[https://arxiv.org/abs/1609.01025 arXiv:1609.01025].
+- Sub-Gaussian estimators of the mean of a random matrix with heavy-tailed entries. Annals of Statistics,  Vol. 46, pages 2871-2903 (2018). \n
+[https://arxiv.org/abs/1605.07129 arXiv:1605.07129].
+- Multiscale Dictionary Learning: Non-Asymptotic Bounds and Robustness (with M. Maggioni and N. Strawn). Journal of Machine Learning Research, 17(2):1−51 (2016). \n
+[http://jmlr.org/papers/v17/maggioni16a.html Abstract and PDF].\n
+[https://mauromaggioni.duckdns.org/ Code] on M. Maggioni’s webpage.
+- Geometric Median and Robust Estimation in Banach Spaces. Bernoulli 21, no. 4, 2308–2335 (2015). \n
+[http://arxiv.org/abs/1308.1334 arXiv:1308.1334]
+- On some extensions of Bernstein's inequality for self-adjoint operators. Statistics and Probability Letters, 127, p. 111-119 (2017). \n
+[https://arxiv.org/abs/1112.5448 arXiv:1112.5448]
+- Functional linear model with subgaussian design: $L_1$ - penalization approach (with V. Koltchinskii). Journal de l’Ecole Polytechnique – Mathematiques, 1, p. 269-330 (2014). \n
+[http://jep.cedram.org/cedram-bin/article/JEP_2014__1__269_0.pdf PDF].
+- Robust and scalable Bayes via a median of subset posterior measures (with S. Srivastava, L. Lin and D. Dunson). Journal of Machine Learning Research, 18(124):1−40 (2017). \n
+[http://arxiv.org/abs/1403.2660 arXiv:1403.2660] \n
+M-posterior code is available [http://homepage.stat.uiowa.edu/~ssrivastva/Mposterior/Mposterior.html here]; R package can be downloaded [http://cran.r-project.org/web/packages/Mposterior/index.html here].
+- Active Learning for Personalized Medicine (with G. Cheng and Y. Zhao). Journal of the American Statistical Association,  vol. 111, number 514, p. 875-887 (2015). \n
+[http://arxiv.org/abs/1404.2971 arXiv:1404.2971]
+- Scalable and Robust Bayesian Inference via the Median Posterior (with S. Srivastava, L. Lin and D. Dunson). In ICML 2014, 31st International Conference on Machine Learning. \n
+[http://proceedings.mlr.press/v32/minsker14.pdf PDF].
+- Multiscale Dictionary and Manifold Learning: Non-Asymptotic Bounds for the Geometric Multi-Resolution Analysis (with M. Maggioni and N. Strawn). In iTWIST 2014, International Traveling Workshop on Interactions between Space Models and Technology. \n
+[https://arxiv.org/abs/1410.0719 Conference Proceedings].
+- Learning Extreme Values and Associated Level Sets of a Regression Function via Selective Sampling. In COLT 2013, 26th Conference on Learning Theory. \n
+[http://proceedings.mlr.press/v30/Minsker13.html Abstract and PDF].
+- Plug-in approach to Active Learning. Journal of Machine Learning Research 13, p. 67-90 (2012). \n
+[http://www.jmlr.org/papers/v13/minsker12a.html Abstract and PDF]. \n
+Improved version of some bounds can be found in Chapter 2 of my 
+[papers/thesis_minsker_public.pdf Ph.D. thesis].
+- Sparse recovery in convex hulls of infinite dictionaries (with V. Koltchinskii). In COLT 2010, 23rd Conference on Learning Theory. \n
+[http://www.learningtheory.org/colt2010/papers/42Koltchinskii.pdf PDF].\n
+Extended version is included in Chapter 3 of my [papers/thesis_minsker_public.pdf Ph.D. thesis].
+
+== Ph.D. Thesis
+
+Non-Asymptotic Bounds for Prediction Problems and Density Estimation. Georgia Institute of Technology, 2012. [papers/thesis_minsker_public.pdf PDF].
+
+
+
+
+
+
+
+
+
+
