@@ -3,13 +3,14 @@
 
 == Papers 
 
-- Uniform bounds for robust mean estimators. Preprint, 2018. \n
+- Excess risk bounds in robust empirical risk minimization (with T. Matthieu). Preprint, 2019.
+- Uniform bounds for robust mean estimators. Submitted, 2019. \n
  [https://arxiv.org/abs/1812.03523 arXiv:1812.03523]
-- User-Friendly Covariance Estimation for Heavy-Tailed Distributions: A Survey and Recent Results (with Yuan Ke,  Zhao Ren,  Qiang Sun and  Wen-Xin Zhou). Preprint, 2018. \n
+- User-Friendly Covariance Estimation for Heavy-Tailed Distributions: A Survey and Recent Results (with Yuan Ke,  Zhao Ren,  Qiang Sun and  Wen-Xin Zhou). Accepted for publication in Statistical Science, 2019. \n
 [https://arxiv.org/abs/1811.01520 arXiv:1811.01520]
-- Moment inequalities for matrix-valued U-statistics of order 2 (with X. Wei). Preprint, 2018. \n
+- Moment inequalities for matrix-valued U-statistics of order 2 (with X. Wei). Submitted, 2018. \n
  [https://arxiv.org/abs/1801.05921 arXiv:1801.05921]
-- Robust modifications of U-statistics and applications to covariance estimation problems (with X. Wei). Preprint, 2018. \n 
+- Robust modifications of U-statistics and applications to covariance estimation problems (with X. Wei). Under review, 2018. \n 
 [https://arxiv.org/abs/1801.05565 arXiv:1801.05565]
 - Estimation of the covariance structure of heavy-tailed distributions (with X. Wei). NIPS-2017. \n 
 [https://arxiv.org/abs/1708.00502 arXiv:1708.00502].
