@@ -3,26 +3,28 @@
 
 == Papers 
 
-- Excess risk bounds in robust empirical risk minimization (with T. Matthieu). Submitted, 2019.\n
+- Asymptotic normality of robust risk minimizers. Preprint (2020). \n
+[papers/MoM-asymp-Lip-v3.pdf PDF].
+- Robust modifications of U-statistics and applications to covariance estimation problems (with X. Wei). Bernoulli 26, No. 1, 694-727 (2020). \n 
+[https://arxiv.org/abs/1801.05565 arXiv:1801.05565]
+- Excess risk bounds in robust empirical risk minimization (joint with T. Matthieu). Submitted (2019).\n
 [http://arxiv.org/abs/1910.07485 arXiv:1910.07485]
-- Uniform bounds for robust mean estimators. Submitted, 2019. \n
- [https://arxiv.org/abs/1812.03523 arXiv:1812.03523]
+- Uniform bounds for robust mean estimators. Submitted (2019). \n
+[https://arxiv.org/abs/1812.03523 arXiv:1812.03523]
 - User-Friendly Covariance Estimation for Heavy-Tailed Distributions: A Survey and Recent Results (with Yuan Ke,  Zhao Ren,  Qiang Sun and  Wen-Xin Zhou). Statistical Science,
 Vol. 34, No. 3, 454-471 (2019). \n
 [https://arxiv.org/abs/1811.01520 arXiv:1811.01520]
 - Moment inequalities for matrix-valued U-statistics of order 2 (with X. Wei). 
 Electronic Journal of Probability 24, No. 133, 1–32. (2019). \n
  [https://arxiv.org/abs/1801.05921 arXiv:1801.05921]
-- Robust modifications of U-statistics and applications to covariance estimation problems (with X. Wei). Bernoulli 26, No. 1, 694-727 (2020). \n 
-[https://arxiv.org/abs/1801.05565 arXiv:1801.05565]
-- Estimation of the covariance structure of heavy-tailed distributions (with X. Wei). Neural Information Processing Systems (NeurIPS) 2017. \n 
-[https://arxiv.org/abs/1708.00502 arXiv:1708.00502].
-- Distributed statistical estimation and rates of convergence in normal approximation. Accepted to the Electronic Journal of Statistics (2019). \n
+- Distributed statistical estimation and rates of convergence in normal approximation. Electronic Journal of Statistics, Vol. 13(2), 5213-5252. (2019). \n
 [https://arxiv.org/abs/1704.02658 arXiv: 1704.02658]
 - Structured signal recovery from non-linear and heavy-tailed measurements (with L. Goldstein and X. Wei). IEEE Transactions on Information Theory,Vol. 64, Iss. 8, pages 5513 - 5530 (2018).  \n
 [https://arxiv.org/abs/1609.01025 arXiv:1609.01025].
 - Sub-Gaussian estimators of the mean of a random matrix with heavy-tailed entries. Annals of Statistics,  Vol. 46, pages 2871-2903 (2018). \n
 [https://arxiv.org/abs/1605.07129 arXiv:1605.07129].
+- Estimation of the covariance structure of heavy-tailed distributions (with X. Wei). Neural Information Processing Systems (NeurIPS) 2017. \n 
+[https://arxiv.org/abs/1708.00502 arXiv:1708.00502].
 - Multiscale Dictionary Learning: Non-Asymptotic Bounds and Robustness (with M. Maggioni and N. Strawn). Journal of Machine Learning Research, 17(2):1−51 (2016). \n
 [http://jmlr.org/papers/v17/maggioni16a.html Abstract and PDF].\n
 [https://mauromaggioni.duckdns.org/ Code] on M. Maggioni’s webpage.
