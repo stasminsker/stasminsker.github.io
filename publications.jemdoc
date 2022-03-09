@@ -3,17 +3,19 @@
 
 == Papers 
 
-- U-statistics of growing order and sub-Gaussian mean estimators with sharp constants. \n
+- U-statistics of growing order and sub-Gaussian mean estimators with sharp constants (2022). \n
 [https://arxiv.org/abs/2202.11842]
-- Minimax Supervised Clustering in the Anisotropic Gaussian Mixture Model: A new take on Robust Interpolation (with M. Ndaoud and Y. Shen). \n 
+- Minimax Supervised Clustering in the Anisotropic Gaussian Mixture Model: A new take on Robust Interpolation (with M. Ndaoud and Y. Shen, 2021). \n 
 [https://arxiv.org/abs/2111.07041]
+- Robust estimation of covariance matrices: adversarial contamination and beyond (with L. Wang, 2021). \n
+[https://arxiv.org/abs/2203.02880]
 - Robust and efficient mean estimation: approach based on the properties of self-normalized sums (with M. Ndaoud). Electronic Journal of Statistics, Vol. 15(2), 6036-6070.  (2021). \n
 [https://arxiv.org/abs/2006.01986 arXiv:2006.01986]
 - Asymptotic normality of robust risk minimizers. Submitted (2020). \n
 [https://arxiv.org/abs/2004.02328 arXiv:2004.02328].
 - Robust modifications of U-statistics and applications to covariance estimation problems (with X. Wei). Bernoulli 26, No. 1, 694-727 (2020). \n 
 [https://arxiv.org/abs/1801.05565 arXiv:1801.05565]
-- Excess risk bounds in robust empirical risk minimization (joint with T. Matthieu). Submitted (2019).\n
+- Excess risk bounds in robust empirical risk minimization (with T. Matthieu). Information and Inference: A Journal of the IMA, Vol. 10(4), 1423–1490 (2021). \n
 [http://arxiv.org/abs/1910.07485 arXiv:1910.07485]
 - Uniform bounds for robust mean estimators. Submitted (2019). \n
 [https://arxiv.org/abs/1812.03523 arXiv:1812.03523]
